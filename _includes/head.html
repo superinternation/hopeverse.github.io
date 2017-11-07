@@ -1,21 +1,23 @@
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="description" content="关于前端、关于信念、关于自由">
-  <meta name="keywords"  content="刘添柱,前端博客,想把时光活成诗,信念,自由,互联网">
-
-
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-  <link rel="stylesheet" href="/_sass/custom.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="关于前端、关于信念、关于自由">
+    <meta name="keywords" content="刘添柱,前端博客,想把时光活成诗,信念,自由,互联网">
+    <title>
+        {% if page.title == "Home" %} {{ site.title }} {% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}
+    </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+    <link rel="stylesheet" href="/_sass/custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d22959cfc478fad5308120cbd09b50e9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
 </head>
