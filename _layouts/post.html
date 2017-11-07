@@ -1,7 +1,4 @@
----
-layout: default
----
-
+--- layout: default ---
 <div class="post">
     <div class="post-info">
         <span>Written by</span> {% if page.author %} {{ page.author }} {% else %} {{ site.author.name }} {% endif %} {% if page.date %}
@@ -13,10 +10,10 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-line"></div>
     {{ content }}
- 
+   
 
     <!--PC和WAP自适应版-->
-    <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+    <div id="SOHUCS"></div>
     <script type="text/javascript">
     (function() {
         var appid = 'cyt3OiLT8';
@@ -32,6 +29,7 @@ layout: default
             loadJs("https://changyan.sohu.com/upload/changyan.js", function() { window.changyan.api.config({ appid: appid, conf: conf }) }); }
     })();
     </script>
+
 </div>
 <div class="pagination">
     {% if page.next.url %}
