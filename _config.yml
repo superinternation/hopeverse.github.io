@@ -1,0 +1,31 @@
+# Permalinks
+permalink:      /:year-:month-:day/:title
+
+# Setup
+title:          想把时光活成诗
+paginate:       8
+baseurl:        
+url:           http://liutianzhu.me
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Build settings
+markdown:       kramdown
+
+# About
+author:
+  name:         hopeverse
+  url:          https://liutianzhu.me
+  email:        hopeverse@gmail.com
+
+# Custom vars
+version:        3.4.1
+github:
+  repo:     
+
+# Gems
+gems:
+  - jekyll-paginate

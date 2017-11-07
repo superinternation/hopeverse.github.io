@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          <h2 class="nav-title">{{ site.title }}</h2>
+        </a>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">旧文章</a></li>
+          <li><a href="{{ '/about' | prepend: site.baseurl }}">关于我</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <span>
+        &copy;2016-2017 <!--这是自动更新年份 <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> --> 版权归{{ site.author.name }}所有.
+      </span>
+    </footer>
+  </body>
+</html>
