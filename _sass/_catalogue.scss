@@ -28,11 +28,11 @@
     font-size: 2rem;
     font-weight: 700;
     margin: .5rem 0;
-    transition:all .6s;
 
     &:hover,
     &:focus {
       text-shadow:2px 2px 5px #aaa;
+      transition:all .3s;
     }
   }
 
