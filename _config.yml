@@ -3,7 +3,7 @@ permalink:      /:year-:month-:day/:title
 
 # Setup
 title:          想把时光活成诗
-paginate:       8
+paginate:       5
 baseurl:        
 url:           http://liutianzhu.me
 
