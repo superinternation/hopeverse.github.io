@@ -14,12 +14,13 @@ layout: default
     <div class="post-line"></div>
     {{ content }}
    
+</div>
+
 <!-- UY BEGIN -->
 <div id="uyan_frame"></div>
 <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2148332"></script>
 <!-- UY END -->
 
-</div>
 <div class="pagination">
     {% if page.next.url %}
     <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a> {% endif %} {% if page.previous.url %}
