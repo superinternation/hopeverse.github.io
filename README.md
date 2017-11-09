@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Hopeverse
 这是博客大概样式 [here](https://liutianzhu.me).
 
