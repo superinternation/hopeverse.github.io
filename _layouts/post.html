@@ -13,11 +13,25 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-line"></div>
     {{ content }}
-   
-   <!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2148332"></script>
-<!-- UY END -->
+
+<!-- Gitment -->
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: '页面 ID', // 可选。这个选项不写（不是留空），默认为 location.href
+        owner: 'hopeverse',
+        repo: 'hopeverse.github.io',
+        oauth: {
+            client_id: 'd67632f11639d1de55f8',
+            client_secret: '8c861670bf84f8731df60e42dd8cde86196553d8',
+        },
+     });
+    gitment.render('comment'); //container为你要显示评论的id
+</script>
+
+<!-- Gitment  End-->
 
 </div>
 
