@@ -39,4 +39,4 @@ $ jekyll serve --watch
 
 ## 版权所有
 
-请参阅 [hopeverse](https://liutianzhu.me)
+请参阅 [hopeverse](https://liutianzhu.me).
