@@ -145,6 +145,32 @@ author: "hopeverse"
         </script>
 ```
 
+### 区别slice,substr,substring
+
+>当两个参数都为正的时候,slice和substring结果是相同的,但是有一个参数为负时,那么slice和substring就有区别了.
+
+```
+var rec = "hello world";
+
+alert(rec.slice(3));          //"lo world"
+alert(rec.substring(3));      //"lo world"
+alert(rec.substr(3));        //"lo world"
+
+alert(rec.slice(3,7));         //"lo w"
+alert(rec.substring(3,7));    //"lo w"
+alert(rec.substr(3,7));       //"lo worl"
+
+alert(rec.slice(-3));         //"rld"　从后往前数3个开始
+alert(rec.substring(-3));     //"hello world" 为负，默认从0开始
+alert(rec.substr(-3));        //"rld"
+
+alert(rec.slice(3,-4));       //"lo w"　下标从3开始到-4(从后往前数4个)
+alert(rec.substring(3,-4));   //"hel"　
+alert(rec.substr(3,-4));      //""　长度为负，默认不显示
+
+
+```
+
 
 ### concat()方法
 
