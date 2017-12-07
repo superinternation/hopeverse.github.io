@@ -30,7 +30,7 @@ git config --global user.email  你的邮箱地址,不需要加双引号.
 
 ![jrml](/images/posts/git/jrml.PNG)  
 
-3.然后输入名字为id_rsa，然后它会让你选择yes or no ，再键入yes，之后就一直回车就可以了。出现下图则表示成功
+3.然后输入名字为id_rsa，然后一路回车就可以了。出现下图则表示成功
 
 ![szcg](/images/posts/git/szcg.PNG)
 
