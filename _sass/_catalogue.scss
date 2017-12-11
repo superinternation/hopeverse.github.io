@@ -29,11 +29,11 @@
     font-weight: 700;
     margin: .5rem 0;
 
-    // &:hover,
-    // &:focus {
-    //   text-shadow:2px 2px 5px #aaa;
-    //   transition:all .3s;
-    // }
+    &:hover,
+    &:focus {
+      // text-shadow:2px 2px 5px #aaa;
+      // transition:all .3s;
+    }
   }
 
   &-line {
