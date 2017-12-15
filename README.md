@@ -1,8 +1,8 @@
 
 #   Hopeverse
-这是博客大概样式 [here](https://liutianzhu.me).
+博客Demo入口 [here](https://liutianzhu.me).
 
-![hopeverse screenshot](/images/posts/jekyll/hope.jpg)
+![hopeverse screenshot](/images/posts/jekyll/hope.png)
 
 ##   特征
 - 与Github页面兼容
