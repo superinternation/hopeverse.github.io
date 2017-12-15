@@ -1,0 +1,1281 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="layout" content="post">
+<meta name="author" content="&quot;hopeverse&quot;"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>"Flex布局教程详解以及flex-grow与fle-shrink详细计算方法"</title></head><body><article class="markdown-body"><p>大多数时候，我们在进行网页布局时，并不能方便的将一些特殊布局给写成自己想要的样子，更多的时候需要将<code>position</code>、<code>float</code>等等一些属性来加以辅助，感觉特别不顺手。</p>
+<p>那么在09年的时候，w3c提出了Flex布局，主要是可以简单，方便的实现各种响应式布局。现如今对于浏览器的支持已经比较好了，而且现也多用于移动端页面的开发。</p>
+<p><br/></p>
+<h3 id="flex"><a name="user-content-flex" href="#flex" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>什么是Flex布局？</h3>
+<p>Flex是一种布局方式叫做弹性布局，能够给盒子提供最大的灵活性，同时可以给任何的盒子指定为flex布局</p>
+<p>通过在父盒子上来指定为flex ，当然行内元素也可以指定为flex布局</p>
+<pre><code>.main {
+    display:flex;       // 块级元素指定flex布局
+}
+</code></pre>
+
+<pre><code>.mian-inline {
+    display:inline-flex;    // 行内元素指定flex布局
+}
+</code></pre>
+
+<p><img alt="不加flex之前" src="/images/posts/flex/flexq.png" /><br />
+<img alt="加flex之后" src="/images/posts/flex/flexh.png" /></p>
+<h3 id="flex_1"><a name="user-content-flex_1" href="#flex_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>flex的概念</h3>
+<p>Flex是一种伸缩布局方式，大家多成为Flex容器。所以只要使用了flex的都成为flex容器，那么它的子元素都是它的容器元素，也叫它的容器项目。</p>
+<p><img alt="flexzhou" src="/images/posts/flex/flexz.png" /></p>
+<p>关于flex轴，它其中有几个术语</p>
+<p>主轴(main axis)： 指的是Flex容器项目排列方向，默认为水平方向为主轴，那么当指定为竖直方向排列容器项目时，主轴为垂直方向的。<br/></p>
+<p>交叉轴(cross axis): 指的是根据主轴的方向，所垂直于主轴方向的，为交叉轴。同上，如若定义的容器项目排列方向不同，交叉轴也是不同的。<br/></p>
+<p>主轴起点(main start): 指的是主轴方向起点位置<br/></p>
+<p>主轴终点(main end): 指的是主轴方向终点位置<br/></p>
+<p>交叉轴起点(cross start): 指的是交叉轴方向起点位置<br/></p>
+<p>交叉轴终点(cross end): 指的是交叉轴轴方向终点位置<br/></p>
+<p>注意！ 关于主轴和交叉轴这两个概念，一定需要理解清楚。最初学习Flex容易忽视主轴和交叉轴的概念，而导致后面的概念混乱。 主轴和交叉轴他们并不是不变的，后面的属性会说。</p>
+<p><br/></p>
+<h3 id="flex_2"><a name="user-content-flex_2" href="#flex_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>flex的属性</h3>
+<h4 id="flex-direcion"><a name="user-content-flex-direcion" href="#flex-direcion" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>flex-direcion</h4>
+<p>此属性决定主轴的方向，row为横向主轴，column为竖直方向为主轴。结合上方<br />
+主轴和交叉轴概念以理解。所以根据主轴定义的方向，交叉轴的方向也会相应改<br />
+变。</p>
+<p><img alt="direction" src="/images/posts/flex/direction.png" /></p>
+<pre><code>flex-direction : row;            // 按行顺序排列   
+
+flex-direction : row-reverse;    // 按行顺序反向排列  
+
+flex-direction : column;         // 按列顺序排列
+
+flex-direction : column-reverse; // 按列顺序反向排列
+
+
+</code></pre>
+
+<p><br/></p>
+<h4 id="flex-wrap"><a name="user-content-flex-wrap" href="#flex-wrap" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>flex-wrap</h4>
+<p>此属性决定flex项目，在一行或者一列顺序下，如果不够空间全部放下，是否换行继续排列，还是继续强制在主轴方向下排列下去。</p>
+<p><img alt="wrap" src="/images/posts/flex/wrap.png" /></p>
+<pre><code>flex-wrap：nowrap;     // 不换行
+
+flex-wrap：wrap;       // 换行
+
+flex-wrap：wrap-reverse  // 不仅换行，还颠倒换行之后的顺序，换行的
+内容排在主轴第一排
+</code></pre>
+
+<p><br/></p>
+<h4 id="flex-flow"><a name="user-content-flex-flow" href="#flex-flow" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>flex-flow</h4>
+<p>此属性是<code>flex-direction</code>和<code>flex-wrap</code>的简写方法</p>
+<pre><code>.main {
+
+    flex-flow：&lt;flex-direction&gt; &lt;flex-wrap&gt; ;
+
+    //默认是flex-flow：row nowrap;
+}
+
+</code></pre>
+
+<p><br/></p>
+<h4 id="justify-content"><a name="user-content-justify-content" href="#justify-content" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>justify-content</h4>
+<p>此属性决定在主轴上的对齐方式，主轴属于不同的方向，那么对齐方式会有相应的改变。</p>
+<p><img alt="justify-content" src="/images/posts/flex/justify.png" /></p>
+<pre><code>justify-content：flex-start;      // 主轴起点对齐
+
+justify-content：flex-end;        // 主轴终点对齐
+
+justify-content：center;          // 主轴居中对齐
+
+justify-content：space-between;   // 主轴两端对齐，各项目中间距离
+                                     相等
+
+justify-content：space-around;    // 两端距离相等，中间项目距离大
+                                     两端距离一倍
+
+justify-content：initial;         // 默认值
+
+</code></pre>
+
+<p><br/></p>
+<h4 id="align-items"><a name="user-content-align-items" href="#align-items" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>align-items</h4>
+<p>此属性定义在交叉轴上的对齐方式</p>
+<p><img alt="items" src="/images/posts/flex/items.png" /></p>
+<pre><code>align-items：flex-start;       // 交叉轴上起点位置对齐
+align-items：flex-end;         // 交叉轴上终点位置对齐
+align-items：stretch;          // 高度未定义或者auto时，交叉轴上项目撑满交叉轴空间
+align-items：baseline;         // 交叉轴上文字基线对齐
+align-items：center;           // 交叉轴上居中对齐
+
+</code></pre>
+
+<p><br/></p>
+<h4 id="align-content"><a name="user-content-align-content" href="#align-content" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>align-content</h4>
+<p>此属性决定当项目变为多轴(相当于flex-wrap:wrap;效果，或者叫多行更好理解)之后的对齐方式，只有一根轴线的话不起作用</p>
+<pre><code>.main {
+    display：flex;
+    flex-flow：row wrap;
+    // 下方图例的基本css代码
+}
+
+</code></pre>
+
+<p><img alt="aligncon" src="/images/posts/flex/aligncon.png" /></p>
+<pre><code>align-content：stretch;
+align-content：center;
+align-content：flex-start;
+align-content：flex-end;
+align-content：space-between;
+align-content：space-around;
+
+</code></pre>
+
+<p><br/></p>
+<h3 id="flex_3"><a name="user-content-flex_3" href="#flex_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Flex单项目属性</h3>
+<h4 id="order"><a name="user-content-order" href="#order" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>order</h4>
+<p>此属性决定着单个flex项目的顺序，默认值为0。另外，数值越小的，排在越前，数值越大的，排在越靠后，当数值相等时，按照结构顺序进行排列。</p>
+<p><img alt="order" src="/images/posts/flex/order.png" /></p>
+<pre><code>&lt;div id=&quot;main&quot;&gt;
+  &lt;div style=&quot;background-color:coral;order:1;&quot;&gt;1&lt;/div&gt;
+  &lt;div style=&quot;background-color:lightblue;order: -2;&quot;&gt;-2&lt;/div&gt;
+  &lt;div style=&quot;background-color:khaki;order: 3;&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;
+
+// 这是上方图例结构，当order数值相同时，不管正负值都按照div的顺序排列
+
+</code></pre>
+
+<p><br/></p>
+<h4 id="align-self"><a name="user-content-align-self" href="#align-self" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>align-self</h4>
+<p>此属性决定着单个flex项目，能够独立出来设置对齐方式。并且能够覆盖align-items属性，默认值为auto的话，那么则继承父元素的align-items属性，如果没有父元素，等同于stretch。</p>
+<p><img alt="self" src="/images/posts/flex/self.png" /></p>
+<pre><code>align-self: auto | flex-start | flex-end | center | baseline | stretch;
+
+// 属性值效果，同前面各类属性值效果差不多，只是它能单独控制单个项目的对齐方式
+
+</code></pre>
+
+<p><br/></p>
+<h4 id="flex-grow"><a name="user-content-flex-grow" href="#flex-grow" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>flex-grow</h4>
+<p>此属性决定着单个flex项目的方法比例，默认值为0。</p>
+<p>在说这个属性之前，先加上一点小细节。flex容器的高度会自动被最高的一个子元素撑开，同时其它子元素的高度也会被拉到跟flex容器一样高，而如果给flex容器设置了高度，而所有子元素的高度设置为 auto ，所有的子元素也都会自动拉伸成跟父元素一样高。（通俗来说就是，普通div，内部盒子的高度如果是auto，那么是根据内容撑开的。但是设置了display:flex之后，当项目未设置高度或者高度为auto，内部无内容，都能够自动撑开到同父元素一样的高度）</p>
+<p>当仅仅只给一个flex子项目，设置flex-grow:1;时将占满所有剩余空间。</p>
+<p>另外，如果不给 flex 子元素设置宽度和 flex-grow，它会根据文字或者内容尽可能的窄。</p>
+<p><img alt="grow" src="/images/posts/flex/grow.png" /></p>
+<pre><code>&lt;div id=&quot;main&quot;&gt;
+  &lt;div style=&quot;background-color:coral;width: 100px;flex-grow:2&quot;&gt;2倍&lt;/div&gt;
+  &lt;div style=&quot;background-color:lightblue;width: 200px;flex-grow: 2;&quot;&gt;2倍&lt;/div&gt;
+  &lt;div style=&quot;background-color:khaki;width: 150px;flex-grow: 1;&quot;&gt;1倍&lt;/div&gt;
+&lt;/div&gt;
+
+// main设置宽度为800px;前三个div最初设置为100px,200px,150px。那么通过flex-grow设置完之后，最后三个div宽度分别为240px,340px,220px;
+
+</code></pre>
+
+<p>800-100-200-150=350   // 容器剩余空间</p>
+<p>350 * 2 / 5 = 140      // 放大2倍之后子项目增加的像素</p>
+<p>350 * 2 / 5 = 140      // 放大2倍之后子项目增加的像素</p>
+<p>350 * 1 / 5 = 70       // 放大1倍之后子项目增加的像素</p>
+<p>100 + 140 = 240      // 第一个div放大之后的宽度</p>
+<p>200 + 140 = 340      // 第二个div放大之后的宽度</p>
+<p>150 + 70 = 220       // 第三个div放大之后的宽度</p>
+<p>那么可以得出计算公式：</p>
+<pre><code>flex容器剩余宽度 * 子项目放大的倍数/flex容器子项目所有放大倍数之和
+
+例如上述例子：剩余空间(800 - 100 - 200 - 150) * (flex-grow) / 5 最后得出放大倍数
+之后给自己原来的width再添加多少px的像素
+
+所以最后每一个div的宽度 = 原本的宽度 + 放大倍数之后得到剩余空间比例的宽度
+
+</code></pre>
+
+<p>当然，上述的公式是在你flex子项目定宽之后，算法才有效。如果不定宽，那么会根据flex子项目中的内容的多少，来决定具体放大倍数之后有多少像素宽，可以在控制台中具体看看改变内容之后，子项目占据了多少像素。</p>
+<p>所以的元素的flex-grow之和只要大于等于1的话，公式都有效。但另外还有种情况，就是当flex-grow之和小于1的时候，剩余空间不会全部分配给各个元素，并且他们最后除的不同于大于等于1的情况，当放大倍数相加小于1时，最后不管如何也是除以1。</p>
+<p><img alt="shenyu" src="/images/posts/flex/shenyu.png" /></p>
+<pre><code>&lt;div id=&quot;main&quot;&gt;
+  &lt;div style=&quot;background-color:coral;width:150px;flex-grow: 0.2;&quot;&gt;倍数&lt;/div&gt;
+  &lt;div style=&quot;background-color:lightblue;width:200px;flex-grow: 0.1;&quot;&gt;倍&lt;/div&gt;
+  &lt;div style=&quot;background-color:khaki;width:250px;flex-grow: 0.3&quot;&gt;倍&lt;/div&gt;
+&lt;/div&gt;
+
+// 这是固定宽度，放大倍数总和不大于1的图例效果。
+
+</code></pre>
+
+<p>例如上面： main为800px 三个DIV宽度分别是150px，200px，250px 放大倍数分别是0.2，0.1，0.3，因为他们相加不等于1，那么我们不管如何都是除以1。所以如下方的计算方法：</p>
+<p>800 - (150 + 200 + 250) = 200   // 剩余容器宽度</p>
+<p>200 * 0.2 / 1 = 40     // 放大0.2倍之后子项目增加的像素</p>
+<p>200 * 0.1 / 1 = 20     // 放大0.1倍之后子项目增加的像素</p>
+<p>200 * 0.3 / 1 = 60     // 放大0.3倍之后子项目增加的像素</p>
+<p>150 + 40  = 190         // 这是现在第一个div放大后的大小</p>
+<p>200 + 20  = 220         // 这是现在第二个div放大后的大小</p>
+<p>250 + 60  = 310         // 这是现在第三个div放大后的大小</p>
+<p>200 - 40 - 20 - 60 = 80       // 这是最后没有分配给子项目的像素，上图中空白处</p>
+<p>那么得出它的计算公式：</p>
+<pre><code>flex剩余容器宽度*子项目放大的倍数/1 = 放大之后给此子项目增加的像素
+那么最后还剩多少没有分配的算法是：用flex剩余容器宽度减去所有子项目增加像素之和，就等于没有分配的空间了。
+
+</code></pre>
+
+<p>以上两种情况，定宽和不定宽都可以使用各自的方法。不定宽就需要去控制台，具体查看子项目内容占据多少空间。</p>
+<p>最后还有一种情况，如果单个子项目设置了max-width，那么不管flex-grow设置多少，都是优先使用max-width的宽度，父元素同样也会有一些空间不会被分配。</p>
+<p><br/></p>
+<h4 id="flex-shrink"><a name="user-content-flex-shrink" href="#flex-shrink" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>flex-shrink</h4>
+<p>此属性可以决定，在空间不够时，合理缩小各flex子项目来适应有限的空间，默认值为1。</p>
+<p>如果所有的项目缩小倍数都为1，那么空间不足时则同比例缩小。但如果其中一个项目为0，其他的项目都为1时，那么父元素空间不足时，为0者不缩小，其他的则再计算等比例缩小。注意！负值无效。</p>
+<p><img alt="shrink" src="/images/posts/flex/shrink.png" /></p>
+<pre><code>&lt;div id=&quot;main&quot;&gt;    // main 宽度为600px
+  &lt;div style=&quot;background-color:coral;width:200px;flex-shrink: 2;&quot;&gt;倍数&lt;/div&gt;
+  &lt;div style=&quot;background-color:lightblue;width:250px;flex-shrink: 1;&quot;&gt;倍数啊&lt;/div&gt;
+  &lt;div style=&quot;background-color:khaki;width:300px;flex-shrink: 3;&quot;&gt;倍&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<p>那么flex-shrink的计算公式如下：</p>
+<p>200 + 250 + 300 = 750 - 600 = 150   &mdash;&gt;   多了150像素</p>
+<pre><code>
+</code></pre>
+
+<p>200 * 2 + 250 * 1 + 300 * 3 = 1550<br />
+<pre><code>
+</code></pre></p>
+<p>// 各flex子项目原始宽度x缩小倍数之后的和=其权重</p>
+<p>150 * 2 * 200 / 1550 = 39</p>
+<p>150 * 1 * 250 / 1550 = 24</p>
+<p>150 * 3 * 300 / 1550 = 87<br />
+<pre><code>
+</code></pre></p>
+<p>// 超出的宽度<em>各flex子项目的缩小倍数</em>各子项目的原始宽度/权重 = 各子项目缩小多少</p>
+<p>200 - 39 =  161</p>
+<p>250 - 24 =  226</p>
+<p>300 - 87 =  213<br />
+<pre><code>
+</code></pre></p>
+<p>// 各子项目的原始宽度 - 缩小之后的像素 = 现在各子项目的实际宽度</p>
+<h5 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>缩小倍数之和小于1的情况</h5>
+<p>那么同flex-grow一样，在各子项目缩小倍数之和小于1时，计算方法也会相应的有所改变</p>
+<p>200 + 250 + 300 = 750 - 600 = 150   &mdash;&gt;   多了150像素</p>
+<p>// flex子项目所有宽度之和 - 父元素宽度 = 超出的宽度</p>
+<p>200 * 0.2 + 250 * 0.1 + 300 * 0.3 = 155</p>
+<p>// 各flex子项目原始宽度x缩小倍数之后的和=其权重</p>
+<p>然而</p>
+<p>150 * 2 * 200 / 155 = 39</p>
+<p>150 * 1 * 250 / 155 = 24</p>
+<p>150 * 3 * 300 / 155 = 87</p>
+<p>// 超出的宽度<em>各flex子项目的缩小倍数</em>各子项目的原始宽度/权重 = 各子项目缩小多少</p>
+<p>200 - 39 =  161</p>
+<p>250 - 24 =  226</p>
+<p>300 - 87 =  213</p>
+<p>// 各子项目的原始宽度 - 缩小之后的像素 = 现在各子项目的实际宽度</p>
+<p>如需转载，请注明出处，谢谢！</p>
+<p><a href="https://liutianzhu.me"><a href="https://liutianzhu.me"><a href="https://liutianzhu.me">https://liutianzhu.me</a></a></a></p></article></body></html>
