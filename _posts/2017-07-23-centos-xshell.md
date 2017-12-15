@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "关于Centos网络配置以及使用xshell远程工具登录的方法"
+title: "关于Centos 6网络配置以及使用xshell远程工具登录的方法"
 author: "hopeverse"
 ---
  
-关于配置centos的网络以及使用xshell来连接centos，期间真是踩了不少的坑。下面就讲
+关于配置centos 6的网络以及使用xshell来连接centos，期间真是踩了不少的坑。下面就讲
 
 一讲这里面的步骤以及出现的一些问题吧。
 
