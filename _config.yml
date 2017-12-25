@@ -17,7 +17,7 @@ sass:
 markdown:       kramdown
 
 # About
-author:         hopeverse
+author:         
   name:         hopeverse
   url:          https://liutianzhu.me
   email:        hopeverse@gmail.com
