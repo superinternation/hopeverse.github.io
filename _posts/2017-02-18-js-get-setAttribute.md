@@ -35,7 +35,7 @@ author: "hopeverse"
 text.getAttribute("title")  //text只是获取的元素储存的对象
 ```
 
-//  这是使用text含有提取的p标签，来用getAttribute()方法来获取特定的属性值，那么括号之内 **“ ”** 之中则是提取谁的属性值了。
+//  这是使用text含有提取的p标签，来用getAttribute()方法来获取特定的属性值，那么括号之内 **" "** 之中则是提取谁的属性值了。
 
 因为上面代码当中有一p标签做为html的段落，其中已经有title属性了，那么我们要提取出title这个属性的话，那么就需要通过getElementById()方法来先获取这个p标签，所以需要在text下使用getAttribute()方法，来获取title值。
 <br/>
